@@ -36,7 +36,7 @@ type List[A] {
   /**
    * Transforms all elements of the `List` by applying the `mapping` function to each element.
    * Returns all transformed elements into a `List`.
-   * This function keep the order of the `List`.
+   * This function keeps the order of the `List`.
    */
   map[B](mapping: A => B): List[B]
 
@@ -44,7 +44,7 @@ type List[A] {
    * Transforms all elements of the `List` by applying the `mapping` function to each element.
    * The `mapping` function returning a `List` of elements.
    * all these elements will be flattened to keep only a `List` and not a `List` of `List`.
-   * This function keep the order of the `List`.
+   * This function keeps the order of the `List`.
    */
   flatMap[B](mapping: A => List[B]): List[B]
 
@@ -56,7 +56,7 @@ type List[A] {
   /**
    * Checks that no element verify the `predicate`.
    *
-   * Thris is an alias of `existsNot`.
+   * This is an alias of `existsNot`.
    */
   forNone(predicate: A => Boolean): Boolean
 
@@ -128,7 +128,7 @@ type List[A] {
    * Transforms the `List` into a `String`.
    *
    * The resulting `String` will start with `prefix`, end with `suffix` and all elements will be separated by `separator`.
-   * All elements will be automatically transformed into `String` (ex: `.toString` in java, scala and javascript).
+   * All elements will be automatically transformed into `String` (ex: `.toString()` in java, scala and javascript).
    */
   mkString(prefix: String, separator: String, suffix: String): String
 
@@ -145,7 +145,7 @@ type List[A] {
 
   /**
    * Returns a new `List` containing only elements existing in both `List`.
-   * Two elements must be equals (ex: `.equals` in java, `==` in scala and javascript).
+   * Two elements must be equals (ex: `.equals()` in java, `==` in scala and javascript).
    */
   intersect(other: List[A]): List[A]
 
@@ -210,4 +210,24 @@ type List[A] {
    * If no element verifies the `predicate`, returns an empty `List`.
    */
   takeWhile(predicate: (A) => Boolean): List[A]
+
+  /**
+   * Creates a new `List` with all elements of this `List` and the given one.
+   */
+  append(element: A): List[A]
+
+  /**
+   * Creates a new `List` with the given element and all ones of this `List`.
+   */
+  prepend(element: A): List[A]
+
+  /**
+   * Creates a new `List` with all elements of this `List` and the ones of the given `List`.
+   */
+  appendAll(elements: List[A]): List[A]
+
+  /**
+   * Creates a new `List` with all elements of the given `List` and the ones of this `List`.
+   */
+  prependAll(elements: List[A]): List[A]
 }

@@ -120,4 +120,29 @@ type Date {
    * Creates a new `Date` with minus `quantity` milliseconds.
    */
   minusMilliseconds(quantity: Number): Date
+
+  /**
+   * Checks if the current date is before the given date.
+   */
+  isBefore(date: Date): Boolean
+
+  /**
+   * Checks if the current date is after the given date.
+   */
+  isAfter(date: Date): Boolean
+
+  /**
+   * Checks if the current date is the same as the given date.
+   */
+  isEqual(date: Date): Boolean
+
+  /**
+   * Checks if the current date is before the given date or the same.
+   */
+  isBeforeOrEqual(date: Date): Boolean
+
+  /**
+   * Checks if the current date is before the given date or the same.
+   */
+  isAfterOrEqual(date: Date): Boolean
 }

@@ -70,4 +70,9 @@ type Option[A] {
    * No element must be equals (ex: `.equals` in java, `==` in scala and javascript) to the given one.
    */
   containsNot(element: A): Boolean
+
+  /**
+   * Checks if the given option is empty or if this option contains the given element
+   */
+  containsIfDefined(elementOption: Option[A]): Boolean
 }

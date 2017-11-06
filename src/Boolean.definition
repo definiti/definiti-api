@@ -8,4 +8,12 @@ type Boolean {
    * Returns the inverse of the current `Boolean` (`true` --> `false`, `false` --> `true`)
    */
   not: Boolean
+
+  /**
+   * Exclusive or, same as:
+   * ```
+   * this && !other || !this && other
+   * ```
+   */
+  xor(other: Boolean): Boolean
 }
