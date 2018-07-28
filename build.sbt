@@ -13,7 +13,7 @@ pomIncludeRepository := { _ => false }
 
 licenses := Seq("MIT" -> url("http://opensource.org/licenses/MIT"))
 
-homepage := Some(url("https://definiti.github.io"))
+homepage := Some(url("https://definiti.gitbook.io/definiti"))
 
 scmInfo := Some(
   ScmInfo(
