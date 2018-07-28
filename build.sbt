@@ -1,13 +1,13 @@
 organization := "io.github.definiti"
+
 name := "api"
-version := "0.3.0-SNAPSHOT"
 
 resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 resourceDirectory in Compile := baseDirectory.value / "src"
 
 crossPaths := false
 
-useGpg := true
+releasePublishArtifactsAction := PgpKeys.publishSigned.value
 
 pomIncludeRepository := { _ => false }
 
