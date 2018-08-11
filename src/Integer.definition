@@ -1,0 +1,25 @@
+/**
+ * An `Integer` represents any integer number.
+ * It should be considered as `BigInt` in applications and use these kind of systems in implementations.
+ */
+type Integer {
+  /**
+   * Returns the absolute value of this `Integer`
+   */
+  abs(): Integer
+
+  /**
+   * Returns the maximum number between this `Integer` and the `other`.
+   */
+  max(other: Integer): Integer
+
+  /**
+   * Returns the minimum number between this `Integer` and the `other`.
+   */
+  min(other: Integer): Integer
+
+  /**
+   * Returns the `Number` version of this `Integer`
+   */
+  toNumber(): Number
+}

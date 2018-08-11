@@ -14,112 +14,112 @@ type Date {
   /**
    * The number of milliseconds since 01/01/1970 00:00:00 UTC
    */
-  timestamp: Number
+  timestamp: Integer
 
   /**
    * The year (4 digits)
    */
-  year: Number
+  year: Integer
 
   /**
    * The month number (1: January, 12: December)
    */
-  month: Number
+  month: Integer
 
   /**
    * The day in the month (1 to 31)
    */
-  day: Number
+  day: Integer
 
   /**
    * The number of hours in the day (0 to 23)
    */
-  hour: Number
+  hour: Integer
 
   /**
    * The number of minutes in the hour (0 to 59)
    */
-  minute: Number
+  minute: Integer
 
   /**
    * The number of seconds in the minute (0 to 59)
    */
-  second: Number
+  second: Integer
 
   /**
    * The number of milliseconds in the second (0 to 999)
    */
-  millisecond: Number
+  millisecond: Integer
 
   /**
    * Creates a new `Date` with `quantity` years.
    */
-  plusYears(quantity: Number): Date
+  plusYears(quantity: Integer): Date
 
   /**
    * Creates a new `Date` with `quantity` months.
    */
-  plusMonths(quantity: Number): Date
+  plusMonths(quantity: Integer): Date
 
   /**
    * Creates a new `Date` with `quantity` days.
    */
-  plusDays(quantity: Number): Date
+  plusDays(quantity: Integer): Date
 
   /**
    * Creates a new `Date` with `quantity` hours.
    */
-  plusHours(quantity: Number): Date
+  plusHours(quantity: Integer): Date
 
   /**
    * Creates a new `Date` with `quantity` minutes.
    */
-  plusMinutes(quantity: Number): Date
+  plusMinutes(quantity: Integer): Date
 
   /**
    * Creates a new `Date` with `quantity` seconds.
    */
-  plusSeconds(quantity: Number): Date
+  plusSeconds(quantity: Integer): Date
 
   /**
    * Creates a new `Date` with `quantity` milliseconds.
    */
-  plusMilliseconds(quantity: Number): Date
+  plusMilliseconds(quantity: Integer): Date
 
   /**
    * Creates a new `Date` with minus `quantity` years.
    */
-  minusYear(quantity: Number): Date
+  minusYear(quantity: Integer): Date
 
   /**
    * Creates a new `Date` with minus `quantity` months.
    */
-  minusMonths(quantity: Number): Date
+  minusMonths(quantity: Integer): Date
 
   /**
    * Creates a new `Date` with minus `quantity` days.
    */
-  minusDays(quantity: Number): Date
+  minusDays(quantity: Integer): Date
 
   /**
    * Creates a new `Date` with minus `quantity` hours.
    */
-  minusHours(quantity: Number): Date
+  minusHours(quantity: Integer): Date
 
   /**
    * Creates a new `Date` with minus `quantity` minutes.
    */
-  minusMinutes(quantity: Number): Date
+  minusMinutes(quantity: Integer): Date
 
   /**
    * Creates a new `Date` with minus `quantity` seconds.
    */
-  minusSeconds(quantity: Number): Date
+  minusSeconds(quantity: Integer): Date
 
   /**
    * Creates a new `Date` with minus `quantity` milliseconds.
    */
-  minusMilliseconds(quantity: Number): Date
+  minusMilliseconds(quantity: Integer): Date
 
   /**
    * Checks if the current date is before the given date.

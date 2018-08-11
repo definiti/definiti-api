@@ -1,5 +1,5 @@
 /**
- * A `Number` represents any number (integers, doubles, etc.).
+ * A `Number` represents a decimal number.
  * It should be considered as `BigDecimals` in applications and use these kind of systems in implementations.
  */
 type Number {
@@ -21,17 +21,17 @@ type Number {
   /**
    * Returns the nearest integer.
    */
-  round(): Number
+  round(): Integer
 
   /**
    * Returns the largest integer less than this one.
    */
-  floor(): Number
+  floor(): Integer
 
   /**
    * Returns the smaller integer greater than this one.
    */
-  ceil(): Number
+  ceil(): Integer
 
   /**
    * Returns the nearest decimal with the given number of `decimals`.
